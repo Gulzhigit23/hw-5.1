@@ -9,16 +9,16 @@ function Comment(props) {
     <div className="Comment" >
       <CommentWrapper className="comment-first">
         <CommentUserInfo
-          avatarUrl={props.data.author.avatarUrl}
-          name={props.data.author.name}
+          avatarUrl={props.author.avatarUrl}
+          name={props.author.name}
         />
 
         
       </CommentWrapper>
 
       <NewWrapper className="words">
-        <div className="Comment-text">{props.data.text}</div>
-        <CommentDate date={props.data.date} />
+        <div className="Comment-text">{props.text}</div>
+        <CommentDate date={props.date} />
       </NewWrapper>
       
 
